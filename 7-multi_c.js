@@ -1,5 +1,10 @@
 const x = Number(process.argv[2]);
-if (Number.isInteger(x) && x > 0) {
-  for (let i = 0; i < x; i++) {
+if (Number.isInteger(x)) {
+  let i = 0;
+  while (i < x) {
     console.log("C is fun");
+    i++;
   }
+} else {
+  console.log("Missing number of occurrences");
+}
